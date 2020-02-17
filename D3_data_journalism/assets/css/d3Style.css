@@ -24,10 +24,14 @@
 }
 
 /* font size dependent on radius, see app.js */
+/* JC: multiple ways to center text (e.g. using "dy" or "transform - tranlsate" attr) */
+/*     settled on using "text-anchor": middle and "dominant-baseline": center in the d3Style.css file */
 .stateText {
   font-family: sans-serif;
   fill: #fff;
   text-anchor: middle;
+  dominant-baseline: central;
+  /* font-size: 12px; */
 }
 
 .stateCircle {
